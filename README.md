@@ -1,7 +1,8 @@
 # apiRestv1
 v1
 
-Aplicação de Cliente > Entrega 
+Aplicação de cenário/domínio 
+ > Cliente > Entrega 
 
 # comandos para rodar api:
 [
