@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Delivery Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Painel de Controle - Logística Amazon</h1>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Cadastrar Cliente</h2>
+            <input type="text" id="nome" placeholder="Nome Completo">
+            <input type="email" id="email" placeholder="E-mail">
+            <input type="text" id="endereco" placeholder="Endereço de Entrega">
+            <button onclick="cadastrarCliente()">Salvar Cliente</button>
+        </div>
+
+        <div class="card">
+            <h2>Cadastrar Encomenda</h2>
+            <input type="text" id="id_cliente" placeholder="ID do Cliente Responsável">
+            <input type="text" id="codigo" placeholder="Código de Rastreio (Ex: AMZ123)">
+            <input type="text" id="produto" placeholder="Nome do Produto">
+            <input type="number" id="peso" placeholder="Peso (kg)">
+            <button onclick="cadastrarEncomenda()">Registrar Encomenda</button>
+        </div>
+    </div>
+
+    <h2>Clientes & Encomendas Ativas</h2>
+    <button onclick="carregarDados()">Atualizar Lista</button>
+    <div id="dados"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
